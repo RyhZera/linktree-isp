@@ -1,0 +1,174 @@
+@keyframes pulse-border {
+    0% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, .4)
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px transparent
+    }
+
+    to {
+        box-shadow: 0 0 0 0 transparent
+    }
+}
+
+@keyframes wobble {
+
+    0%,
+    to {
+        transform: rotate(-5deg)
+    }
+
+    50% {
+        transform: rotate(5deg)
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        filter: blur(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0)
+    }
+}
+
+:root {
+    --bg-dark: #050505;
+    --purple-glow: #7c3aed;
+    --blue-glow: #2563eb;
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --amber-glow: #f59e0b
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #f8fafc;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin: 0;
+    overflow-x: hidden
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%
+}
+
+.banner-container {
+    position: relative;
+    height: 280px;
+    width: 100%;
+    overflow: hidden
+}
+
+.banner-slide,
+.link-card::before {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.banner-slide {
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    filter: brightness(.6)
+}
+
+.banner-slide.active {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, var(--bg-dark), transparent)
+}
+
+.profile-wrapper {
+    margin-top: -70px;
+    z-index: 20;
+    position: relative
+}
+
+.avatar-glow {
+    position: relative;
+    padding: 4px;
+    background: linear-gradient(45deg, var(--purple-glow), var(--blue-glow));
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(124, 58, 237, .5)
+}
+
+.link-card {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    transition: all .4s cubic-bezier(.23, 1, .32, 1);
+    position: relative;
+    overflow: hidden
+}
+
+.link-card::before {
+    content: "";
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .05), transparent);
+    transition: .5s
+}
+
+.link-card:hover::before {
+    left: 100%
+}
+
+.link-card:hover {
+    border-color: var(--purple-glow);
+    background: rgba(124, 58, 237, .1);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, .3), 0 0 15px rgba(124, 58, 237, .2)
+}
+
+.link-card-special {
+    background: linear-gradient(90deg, rgba(245, 158, 11, .1), rgba(245, 158, 11, .05));
+    border: 1px solid rgba(245, 158, 11, .3);
+    animation: pulse-border 2s infinite ease-in-out
+}
+
+.link-card-special:hover {
+    border-color: var(--amber-glow);
+    background: rgba(245, 158, 11, .2);
+    box-shadow: 0 0 25px rgba(245, 158, 11, .4)
+}
+
+.ticket-icon-anim {
+    animation: wobble 2s infinite ease-in-out
+}
+
+.animate-slide-up {
+    animation: slideUp .8s cubic-bezier(.2, .8, .2, 1) forwards;
+    opacity: 0
+}
+
+.text-glow {
+    text-shadow: 0 0 15px rgba(168, 85, 247, .5)
+}
