@@ -16,7 +16,7 @@ Preview 💫
 ![Preview do projeto](./img/preview.webp)
 
 - Versão de Mobile
-- ![Preview do projeto](./img/preview-mobile.png)
+- ![Preview do projeto](./img/preview-mobile.webp)
 
 Uma landing page com:
 - Banner animado com transição automática.
