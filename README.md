@@ -12,8 +12,11 @@ Projeto desenvolvido para o evento Iesgo Sem Pijama.
 ---
 
 Preview 💫
+- Versão de PC
+![Preview do projeto](./img/preview.webp)
 
-![Preview do projeto](./preview.png)
+- Versão de Mobile
+- ![Preview do projeto](./img/preview-mobile.png)
 
 Uma landing page com:
 - Banner animado com transição automática.
