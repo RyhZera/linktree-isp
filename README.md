@@ -13,9 +13,11 @@ Projeto desenvolvido para o evento Iesgo Sem Pijama.
 
 Preview 💫
 - Versão de PC
+
 ![Preview do projeto](./img/preview.webp)
 
 - Versão de Mobile
+
 - ![Preview do projeto](./img/preview-mobile.webp)
 
 Uma landing page com:
