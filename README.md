@@ -13,7 +13,7 @@ Projeto desenvolvido para o evento Iesgo Sem Pijama.
 
 ## Acesse
 
-[Ver site online]([https://seu-site.vercel.app](https://linktree-isp.netlify.app/))
+👉 [Ver site online](https://linktree-isp.netlify.app/)
 
 --
 
