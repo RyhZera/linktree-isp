@@ -11,9 +11,23 @@ Projeto desenvolvido para o evento Iesgo Sem Pijama.
 
 ---
 
+🚀 Acesse o nosso site:
+
+👉 [Ver site online](https://linktree-isp.netlify.app/)
+
+---
+
 Preview 💫
 
-![Preview do projeto](./preview.png)
+- Versão de Mobile
+
+![Preview do projeto](./img/preview-mobile.webp)
+
+
+- Versão de PC
+
+![Preview do projeto](./img/preview.webp)
+
 
 Uma landing page com:
 - Banner animado com transição automática.
