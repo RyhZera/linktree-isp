@@ -55,8 +55,10 @@ Tecnologias utilizadas:
 ├── index.html
 ├── css/
 │   └── style.css
+│   └── output.css
 ├── js/
 │   └── script.js
+│   └── lazy.js
 └── img/
     ├── Banner01.webp
     ├── Banner02.webp
