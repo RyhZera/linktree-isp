@@ -1,0 +1,24 @@
+{
+  "name": "linktree-isp",
+  "version": "1.0.0",
+  "description": "🚀 Iesgo Sem Pijama | Linktree Premium - RyhanC. 👨🏽‍💻",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyhZera/linktree-isp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RyhZera/linktree-isp/issues"
+  },
+  "homepage": "https://github.com/RyhZera/linktree-isp#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
