@@ -106,9 +106,3 @@ git clone https://github.com/RyhZera/linktree-isp.git
 - Transições otimizadas com transform e opacity
 
 ---
-
-📄 Licença
-
-Este projeto é livre para uso e modificação para fins educacionais.
-
----
